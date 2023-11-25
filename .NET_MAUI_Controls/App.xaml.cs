@@ -1,4 +1,6 @@
-﻿namespace _NET_MAUI_Controls;
+﻿using _NET_MAUI_Controls.Pages;
+
+namespace _NET_MAUI_Controls;
 
 public partial class App : Application
 {
@@ -6,7 +8,7 @@ public partial class App : Application
 	{
 		InitializeComponent();
 
-		MainPage = new AppShell();
+		MainPage = new CommonControls();
 	}
 }
 
