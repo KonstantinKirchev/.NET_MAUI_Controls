@@ -8,14 +8,20 @@
         <VerticalStackLayout>
             <Frame BackgroundColor="#EAEEFA" Margin="10">
                 <VerticalStackLayout>
-                    <Image Source="dotnet_bot.svg"/>
+                    <Image Source="dotnet_bot.svg" HeightRequest="100"/>
                     <Label
                         Text="Coding Droplets"
                         TextColor="#F44245"
                         HorizontalTextAlignment="Center"
                         FontSize="20"
-                        FontAttributes="Bold"/>
+                        FontAttributes="Bold"
+                        Margin="10"/>
                 </VerticalStackLayout>
+            </Frame>
+            <Frame BackgroundColor="#EAEEFA" Margin="10">
+                <Border Padding="10" StrokeThickness="5" Stroke="Red" BackgroundColor="#EAEEFA">
+                    <Label Text="Welcome" HorizontalTextAlignment="Center"></Label>
+                </Border>
             </Frame>
         </VerticalStackLayout>
     </ScrollView>
