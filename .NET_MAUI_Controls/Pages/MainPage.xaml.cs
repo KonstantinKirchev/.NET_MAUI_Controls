@@ -16,4 +16,9 @@ public partial class MainPage : ContentPage
     {
         Navigation.PushAsync(new ActionControls());
     }
+
+    private void inputControlsButton_Clicked(object sender, EventArgs e)
+    {
+        Navigation.PushAsync(new InputControls());
+    }
 }

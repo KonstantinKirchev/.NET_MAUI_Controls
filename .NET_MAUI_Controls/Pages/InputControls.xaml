@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="_NET_MAUI_Controls.Pages.InputControls"
+             Title="InputControls">
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="10">
+            <Frame BackgroundColor="#EAEEFA">
+                <Entry Placeholder="Enter Text Here" PlaceholderColor="DarkGray"/>
+            </Frame>
+            <Frame BackgroundColor="#EAEEFA">
+                <Editor Placeholder="Editor" AutoSize="TextChanges"/>
+            </Frame>
+            <Frame BackgroundColor="#EAEEFA">
+                <HorizontalStackLayout>
+                    <CheckBox IsChecked="True"/>
+                    <Label Text="Checkbox 01" VerticalOptions="Center"/>
+                </HorizontalStackLayout>
+            </Frame>
+            <Frame BackgroundColor="#EAEEFA">
+                <VerticalStackLayout>
+                    <RadioButton GroupName="Group1" Content="Option 1"/>
+                    <RadioButton GroupName="Group1" Content="Option 2"/>
+                    <RadioButton GroupName="Group2" Content="Option 3"/>
+                    <RadioButton GroupName="Group2" Content="Option 4"/>
+                </VerticalStackLayout>
+            </Frame>
+            <Frame BackgroundColor="#EAEEFA">
+                <VerticalStackLayout>
+                    <Slider
+                    ThumbColor="Red"
+                    MaximumTrackColor="Beige"
+                    MinimumTrackColor="Red"
+                    Minimum="1"
+                    Maximum="100"
+                    ValueChanged="Slider_ValueChanged"/>
+                    <Label x:Name="sliderValueLabel" HorizontalOptions="Center"/>
+                </VerticalStackLayout>
+            </Frame>
+            <Frame BackgroundColor="#EAEEFA">
+                <VerticalStackLayout>
+                    <Stepper
+                        HorizontalOptions="Center"
+                        Minimum="4"
+                        Maximum="20"
+                        Increment="2"
+                        ValueChanged="Stepper_ValueChanged"/>
+                    <Label x:Name="stepperValueLabel" HorizontalOptions="Center"/>
+                </VerticalStackLayout>
+            </Frame>
+            <Frame BackgroundColor="#EAEEFA">
+                <VerticalStackLayout>
+                    <HorizontalStackLayout>
+                        <Switch HorizontalOptions="Start"/>
+                        <Label Text="Switch 01" VerticalOptions="Center"/>
+                        <Switch HorizontalOptions="Start"/>
+                        <Label Text="Switch 02" VerticalOptions="Center"/>
+                    </HorizontalStackLayout>
+                </VerticalStackLayout>
+            </Frame>
+            <Frame BackgroundColor="#EAEEFA">
+                <VerticalStackLayout>
+                    <DatePicker HorizontalOptions="Center"/>
+                </VerticalStackLayout>
+            </Frame>
+            <Frame BackgroundColor="#EAEEFA">
+                <VerticalStackLayout>
+                    <TimePicker HorizontalOptions="Center"/>
+                </VerticalStackLayout>
+            </Frame>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
