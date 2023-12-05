@@ -18,6 +18,10 @@
                              Clicked="demoImageButton_Clicked"
                              HeightRequest="50"/>
             </Frame>
+            <Frame BackgroundColor="#EAEEFA" Margin="10">
+                <SearchBar x:Name="demoSearchBar"
+                           SearchButtonPressed="demoSearchBar_SearchButtonPressed"/>
+            </Frame>
         </VerticalStackLayout>
     </ScrollView>
 </ContentPage>

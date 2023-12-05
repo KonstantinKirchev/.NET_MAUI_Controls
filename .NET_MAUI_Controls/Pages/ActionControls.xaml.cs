@@ -16,4 +16,9 @@ public partial class ActionControls : ContentPage
     {
         DisplayAlert("Coding Droplets", "You've clicked the download button", "OK");
     }
+
+	private void demoSearchBar_SearchButtonPressed(object sender, EventArgs e)
+	{
+        DisplayAlert("Coding Droplets", $"You've searched for \"{demoSearchBar.Text}\"", "OK");
+    }
 }
