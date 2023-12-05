@@ -11,4 +11,9 @@ public partial class MainPage : ContentPage
 	{
 		Navigation.PushAsync(new CommonControls());
 	}
+
+    private void actionControlsButton_Clicked(object sender, EventArgs e)
+    {
+        Navigation.PushAsync(new ActionControls());
+    }
 }

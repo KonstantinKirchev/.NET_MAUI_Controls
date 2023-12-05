@@ -10,11 +10,16 @@
             Padding="20"
             Spacing="10"
             VerticalOptions="End">
-            <Button x:Name="commonControlButton"
+            <Button x:Name="commonControlsButton"
                     BackgroundColor="#F25365"
-                    Text="Common Control"
+                    Text="Common Controls"
                     TextColor="White"
                     Clicked="commonControlsButton_Clicked"/>
+            <Button x:Name="actionControlsButton"
+                    BackgroundColor="#F25365"
+                    Text="Action Controls"
+                    TextColor="White"
+                    Clicked="actionControlsButton_Clicked"/>
         </VerticalStackLayout>
         <VerticalStackLayout BackgroundColor="#181C3F" Padding="10">
             <Label Text="Coding Droplets"

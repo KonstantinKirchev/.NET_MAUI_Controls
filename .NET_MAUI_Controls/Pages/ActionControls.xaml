@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="_NET_MAUI_Controls.Pages.ActionControls"
+             Title="ActionControls"
+             BackgroundColor="#EAEEFA">
+    <ScrollView>
+        <VerticalStackLayout>
+            <Frame BackgroundColor="#EAEEFA" Margin="10">
+                <Button x:Name="demoButton"
+                        BackgroundColor="#F25365"
+                        Text="Click me"
+                        Clicked="demoButton_Clicked"/>
+            </Frame>
+            <Frame BackgroundColor="#EAEEFA" Margin="10">
+                <ImageButton x:Name="demoImageButton"
+                             Source="dotnet_bot.svg"
+                             Clicked="demoImageButton_Clicked"
+                             HeightRequest="50"/>
+            </Frame>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
