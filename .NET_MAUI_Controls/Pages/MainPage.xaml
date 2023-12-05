@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="_NET_MAUI_Controls.Pages.MainPage"
+             Title=".NET_MAUI_Controls"
+             BackgroundColor="#EAEEFA">
+    <FlexLayout Direction="Column">
+        <VerticalStackLayout
+            FlexLayout.Grow="1"
+            Padding="20"
+            Spacing="10"
+            VerticalOptions="End">
+            <Button x:Name="commonControlButton"
+                    BackgroundColor="#F25365"
+                    Text="Common Control"
+                    TextColor="White"
+                    Clicked="commonControlsButton_Clicked"/>
+        </VerticalStackLayout>
+        <VerticalStackLayout BackgroundColor="#181C3F" Padding="10">
+            <Label Text="Coding Droplets"
+                   TextColor="White"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"/>
+        </VerticalStackLayout>
+    </FlexLayout>
+</ContentPage>
