@@ -22,6 +22,40 @@
                 <SearchBar x:Name="demoSearchBar"
                            SearchButtonPressed="demoSearchBar_SearchButtonPressed"/>
             </Frame>
+            <SwipeView>
+                <SwipeView.LeftItems>
+                    <SwipeItems>
+                        <SwipeItem x:Name="facebookSwipeItem"
+                                   BackgroundColor="#1877f2"
+                                   IconImageSource="facebook.png"
+                                   Invoked="facebookSwipeItem_Invoked"/>
+                        <SwipeItem x:Name="instagramSwipeItem"
+                                   BackgroundColor="#ff417b"
+                                   IconImageSource="instagram.png"
+                                   Invoked="instagramSwipeItem_Invoked"/>
+                    </SwipeItems>
+                </SwipeView.LeftItems>
+                <SwipeView.RightItems>
+                    <SwipeItems>
+                        <SwipeItem x:Name="twitterSwipeItem"
+                                   BackgroundColor="#1877f2"
+                                   IconImageSource="twitter.png"
+                                   Invoked="twitterSwipeItem_Invoked"/>
+                        <SwipeItem x:Name="linkedInSwipeItem"
+                                   BackgroundColor="#ff417b"
+                                   IconImageSource="linkedIn.png"
+                                   Invoked="linkedInSwipeItem_Invoked"/>
+                    </SwipeItems>
+                </SwipeView.RightItems>
+                <VerticalStackLayout>
+                    <Label Text="This is a swipe view"
+                           BackgroundColor="Grey"
+                           Padding="15"
+                           FontSize="18"
+                           TextColor="White"
+                           FontAttributes="Bold"/>
+                </VerticalStackLayout>
+            </SwipeView>
         </VerticalStackLayout>
     </ScrollView>
 </ContentPage>
