@@ -25,6 +25,11 @@
                     Text="Input Controls"
                     TextColor="White"
                     Clicked="inputControlsButton_Clicked"/>
+            <Button x:Name="indicatorControlsButton"
+                    BackgroundColor="#F25365"
+                    Text="Indicator Controls"
+                    TextColor="White"
+                    Clicked="indicatorControlsButton_Clicked"/>
         </VerticalStackLayout>
         <VerticalStackLayout BackgroundColor="#181C3F" Padding="10">
             <Label Text="Coding Droplets"
